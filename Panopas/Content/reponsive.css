@@ -1,0 +1,466 @@
+﻿
+/* Extra small devices (phones, less than 767px) */
+@media screen and (max-width: 767px) {
+
+    /*-------header--------*/
+    .header-contain{
+        height:auto;
+    }
+    .header-row-t{
+        position:relative;
+        height:116px;
+    }
+    .header-contain-l{
+        width:40%;
+        height:100%;
+        margin-left:0px;
+    }
+
+        .header-contain-l .btn-categories {
+            display: inline;
+            float: left;
+            margin: 0 14px 0px 10px;
+            font-size: 22px;
+        }
+
+        .header-contain-l img {
+            content: url("img/logo-small.png"); 
+            width: 85px;
+        }
+        .header-contain-l .search-mini {
+            display: table;
+            position: absolute;
+            z-index:0;
+            width: 100%;
+            padding: 10px;
+        }
+
+    .header-contain-r {
+        display: inline;
+        width: 60%;
+        margin-right: 0px;
+        padding-top: 0px;
+    }
+        .header-contain-r .item img {
+            width: 27px;
+            padding-right:5px;
+        }
+        .header-contain-r .item-hotline {
+            margin-left: 0px;
+            position: absolute;
+            right: 10px;
+        }
+        .header-contain-r .item-account {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            margin-left: 0px;
+            font-size:14px;
+        }
+        .header-contain-r .item-thoat-ra {
+            position: absolute;
+            bottom: 10px;
+            left: 43%;
+            margin-left: 0px;
+            font-size:14px;
+        }
+            .header-contain-r .item-thoat-ra img{
+                margin-top:3px;
+            }
+        .header-contain-r .item-giohang {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            margin-left: 0px;
+            font-size:14px;
+        }
+            .header-contain-r .item-giohang img {
+                position: absolute;
+                right: 54px;
+                bottom: 3px;
+                margin-left: 0px;
+            }
+
+    .header-row-b{
+        display: none;
+    }
+
+
+    /*-------end header--------*/
+
+    /*-------Main--------*/
+    .sp-moi ul li {
+        width:100%;
+        margin-top:6px;
+        margin-bottom:6px;
+    }
+        .sp-moi ul li img{
+            display:inline;
+        }
+        .sp-moi .border{
+            width:100%;
+            max-width:395px;
+        }
+    .sp-tieu-bieu li.l {
+        padding-left: 6px;
+    }
+    .sp-tieu-bieu li.r {
+        padding-right: 6px;
+    }
+    .sp-tieu-bieu li img {
+        display:inline;
+    }
+    .sp-noi-bat ul li {
+        width: 100%;
+        margin:6px 0px;
+    }
+        .sp-noi-bat ul li img{
+            display:inline;
+            width:100%;
+        }
+        .sp-noi-bat ul li.l {
+            padding-right:0px;
+        }
+        .sp-noi-bat ul li.r {
+            padding:0px;
+        }
+    .video-gioithieu{
+        display: block;
+    }
+    .video-gioithieu .l{
+        width:100%;
+    }
+    .video-gioithieu .r {
+        float: none;
+        margin: 0px;
+        padding: 10px;
+        width: 100%;
+        display:inline-block;
+    }
+
+    .slogan {
+        position: unset;
+    }
+
+    .like-share {
+        float: right;
+        margin: 0px;
+        display:flex;
+    }
+        .like-share a:first-child {
+            float: none;
+        }
+        .like-share img {
+            margin-top:5px;
+        }
+    /*-------end Main--------*/
+
+    /*---------Footer-----------*/
+    /*lấy cái này*/
+    .footer-contain ul li {
+        float: left;
+        width: 100%;
+        border-top:1px solid;
+        border-left:none;
+    }
+        /*lấy cái này*/
+    .footer-contain ul li.li-thanhtoan {
+      height:170px;
+    }
+        /*lấy cái này*/
+    .footer-contain ul li:first-child {
+        border:none;
+        height:365px;
+        margin-bottom:20px;
+
+    }
+    /*lấy cái này*/
+    .chitiet-trogiup {
+        line-height: 27px;
+    }
+    /*lấy cái này*/
+    .footer-contain ul{
+        margin-top:25px;
+    }
+        /*lấy cái này*/
+    .footer-contain ul li {
+        height: 180px;
+    }
+    /*lấy cái này*/
+    .thietke, .location, .moiban {
+        margin-top: 30px;
+    }
+    /*lấy cái này*/
+    .chitiet-trogiup p{
+        font-size:15px;
+    }
+    .footer-contain{
+        font-size:unset;
+    }
+    .footer-contain ul li.hotro {
+        height: 198px;
+    }
+   
+    /*---------end Footer-----------*/
+
+    /*---------end sidebar-----------*/
+    .sidebar-t {
+        padding: 33px 15px;
+    }
+    /*---------end sidebar-----------*/
+
+    @media screen and (min-height: 568px){
+        .sidebar-t {
+            padding: 56px 15px 20px 15px;
+        }
+        .header-contain {
+            position: fixed;
+            height: auto;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+            margin-top: 0px;
+        }
+
+        .header-row-t {
+            position: absolute;
+            height: 136px;
+            background: white;
+            padding-top: 20px;
+            width: 100%;
+        }
+        .main-contain{
+            padding-top:143px;
+        }
+    }
+}
+
+/* Small devices (tablets, 768px and 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /*-------sidebar--------*/
+    a.closebtn {
+        font-size: 46px;
+        top: 10px;
+    }
+    /*-------end sidebar--------*/
+    /*-------header--------*/
+    .header-contain-l {
+        width: 40%;
+        height: auto;
+    }
+        .header-contain-l .btn-categories {
+            display: inline;
+            margin-right: 20px;
+            position: relative;
+            top: 6px;
+        }
+            .header-contain-l .btn-categories i {
+                font-size: 28px;
+            }
+
+        .header-contain-l .search-mini {
+            display: table;
+            margin-top: 10px;
+            z-index:0;
+        }
+
+        .header-contain-l img {
+            content: url("img/logo-small.png");
+        }
+    .header-contain-r {
+        margin-right: 20px;
+        position: relative;
+        width: 50%;
+        padding-top: 0px;
+        height: 79px;
+    }
+
+        .header-contain-r .item {
+            position: absolute;
+            bottom: 0px;
+            margin-left:25px;
+            font-size:15px;
+        }
+
+            .header-contain-r .item i {
+                font-size: 28px;
+            }
+
+        .header-contain-r .item-hotline {
+            top: 0px;
+            right: 0px;
+        }
+            .header-contain-r .item-hotline div{
+                margin-top:0px;
+            }
+        .header-contain-r .item-account {
+            left: 0px;
+            margin-left:0px
+        }
+        .header-contain-r .item-thoat-ra {
+            left: 35%;
+        }
+
+        .header-contain-r .item-giohang {
+            right: 0px;
+        }
+
+    .header-row-b{
+        display:none;
+    }
+    /*-------end header--------*/
+    /*-------Main--------*/
+    .sp-tieu-bieu li.m img {
+        height: 231px;
+    }
+    /*-------end Main--------*/
+    /*---------Footer-----------*/
+    .footer-contain {
+        font-size: 11px;
+    }
+    .hotro-tructuyen .l {
+        width: 25%;
+    }
+
+    .hotro-tructuyen .r {
+        width: 75%;
+    }
+    .location .l {
+        width: 25%;
+        text-align: center;
+    }
+
+    .location .r {
+        width: 75%;
+    }
+    .thanhtoan .l {
+        width: 25%;
+    }
+
+    .thanhtoan .r {
+        width: 75%;
+    }
+    .thietke .l {
+        width: 25%;
+        text-align: center;
+    }
+
+    .thietke .r {
+        width: 75%;
+    }
+    /*---------end Footer-----------*/
+}
+
+/* Medium devices (desktops, 992px and 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    /*-------Main--------*/
+    .sp-tieu-bieu li img {
+        display: inline;
+    }
+    /*-------end Main--------*/
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    /*-------Main--------*/
+    .sp-tieu-bieu li img {
+        display: inline;
+    }
+
+    .page-contain{
+        width:1200px;
+    }
+    /*-------end Main--------*/
+}
+
+@media screen and (min-height: 568px) {
+
+    .header-contain {
+        position: fixed;
+        height: auto;
+        width: 100%;
+    }
+
+    .header-row-t {
+        position: absolute;
+        background: white;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .footer-contain ul li:last-child {
+        padding-left: 26%;
+    }
+}
+@media screen and (max-width: 732px) {
+    .footer-contain ul li:last-child {
+        padding-left: 26%;
+    }
+    .footer-contain ul li .hotro-tructuyen, .location, .thanhtoan, .thietke {
+        padding-left: 16%;
+    }
+    .footer-contain ul li .trogiup {
+        left: 41%;
+    }
+    .footer-contain ul li:last-child {
+        padding-left: 37%;
+    }
+}
+@media screen and (max-width: 667px) {
+    .footer-contain ul li:last-child {
+        padding-left: 36.5%;
+    }
+    .footer-contain ul li .trogiup {
+        left: 41%;
+    }
+    .footer-contain ul li .hotro-tructuyen, .location, .thanhtoan, .thietke {
+        padding-left: 16%;
+    }
+}
+@media screen and (max-width: 568px) {
+    .footer-contain ul li:last-child {
+        padding-left: 36%;
+    }
+}
+@media screen and (max-width: 414px) {
+    .footer-contain ul li:last-child {
+        padding-left: 22.7%;
+    }
+    .footer-contain ul li .hotro-tructuyen, .location, .thanhtoan, .thietke {
+        padding-left: 0;
+    }
+
+    .footer-contain ul li .trogiup {
+        left: 30%;
+    }
+}
+@media screen and (max-width: 412px) {
+    .footer-contain ul li:last-child {
+        padding-left: 22.7%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .footer-contain ul li:last-child {
+        padding-left: 22%;
+    }
+    .footer-contain ul li .hotro-tructuyen, .location, .thanhtoan, .thietke {
+        padding-left: 0;
+    }
+    .footer-contain ul li .trogiup{
+        left:30%;
+    }
+}
+@media screen and (max-width: 360px) {
+    .footer-contain ul li:last-child {
+        padding-left: 21.7%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .footer-contain ul li:last-child {
+        padding-left: 21%;
+    }
+}
+
+
+

@@ -1,0 +1,472 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../Content/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/Bootstrap3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/jqueryUI1.12.1/jquery-ui.min.css" rel="stylesheet" />
+
+    <link href="Content/base.css?v=1.1146" rel="stylesheet" />
+    <link href="Content/reponsive.css?v=1.1117" rel="stylesheet" />
+
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Content/Bootstrap3.3.6/js/bootstrap.min.js"></script>
+    <script src="../Content/jqueryUI1.12.1/jquery-ui.min.js"></script>
+
+</head>
+<body>
+    <div class="page-contain clearfix">
+        <div class="sidebar-contain">
+            <div class="sidebar-t">
+                <a href="#"><img src="Content/img/logo.png" title="Công ty in, công ty in ấn, xưởng in" alt="Panopas, in ấn, thiết kế in ấn" /></a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            </div>
+            <ul class="sidebar-b">
+                <li>
+                    <a href="/HtmlPage1.html">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="#">Sản phẩm</a>
+                </li>
+                <li>
+                    <a href="#">Khuyến mãi</a>
+                </li>
+                <li>
+                    <a href="#">Trợ giúp</a>
+                </li>
+                <li>
+                    <a href="#">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="#">Liên hệ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="overlay" onclick="closeNav()" style="width: 0%; opacity: 0;"></div>
+            <div class="header-contain clearfix">
+                <div class="header-row-t clearfix">
+                    <div class="header-contain-l">
+                        <a href="javascript:;" class="btn-categories" onclick="openNavLeft()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                        <a href="/Home/Index"><img src="Content/img/logo.png" title="Công ty in, công ty in ấn, xưởng in" alt="Panopas, in ấn, thiết kế in ấn" /></a>
+                        <div class="input-group search-mini">
+                            <input type="text" class="form-control" placeholder="Tình trạng đơn hàng" aria-label="Tình trạng đơn hàng...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><i class="fa fa-search" style=""></i></button>
+                            </span>
+                        </div><!-- /input-group -->
+                    </div>
+                    <div class="header-contain-r">
+                        <div class="item item-hotline clearfix m-t-0">
+                            <img src="Content/img/call-center.png" />
+                            <div>
+                                <div>
+                                    (028)
+                                </div>
+                                <div class="hotline">7106 0707 <span class="temp">-</span> 7306 0707</div>
+                            </div>
+                        </div>
+                        <div class="item item-account">
+                            <!--<img src="Content/img/icon-login.png" />
+                            <a href="#" class="btnShowLogin">
+                                Đăng ký / Đăng nhập
+                                <div>
+
+                                </div>
+                            </a>-->
+                            <img src="Content/img/icon-login.png" />
+                            <a href="#" class="btnShowLogin">
+                                Trang cá nhân
+                            </a>
+                        </div>
+                        <div class="item item-thoat-ra">
+                            <img src="Content/img/icon2/icon-logout.png" />
+                            <a href="#" class="btnShowLogin">
+                                Thoát ra
+                            </a>
+                        </div>
+                        <div class="item item-giohang">
+                            <img src="Content/img/icon-cart.png" />
+                            <a href="#" class="btnViewCart" rellog="0">Giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-row-b clearfix">
+                    <ul>
+                        <li style="padding-top: 3px;">
+                            <a href="./" title="In ấn, in nhanh, in tờ rơi, in ấn tờ rơi" style="padding: 0px; margin: 0px">
+                                <i class="fa fa-home fa-2x" aria-hidden="true">
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Sản phẩm</a>
+                        </li>
+                        <li>
+                            <a href="#">Khuyến mãi</a>
+                        </li>
+                        <li>
+                            <a href="#">Trợ giúp</a>
+                        </li>
+                        <li>
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="#">Liên hệ</a>
+                        </li>
+                        <li style=" float: right; border-right: none; padding-right: 23px; padding-top: 13px;">
+                            <div class="input-group" style=" max-width: 310px;">
+                                <input type="text" class="form-control" placeholder="Tình trạng đơn hàng" aria-label="Tình trạng đơn hàng...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="fa fa-search" style=""></i></button>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-contain">
+                <div class="banner-km"><img src="Content/img/banner-km.png" /></div>
+                <div class="slide-km"><img src="Content/img/slide.png" /></div>
+                <div class="sp-moi">
+                    <ul class="clearfix">
+                        <li class="col col-sm-4 l">
+                            <div class="text-center"><img src="Content/img/sp-moi-1.png" class="img-responsive" /></div>
+                            <center>
+                                <div class="border">
+                                    <div>
+                                        <div class="clear-top"></div>
+                                        <div class="ct">
+                                            Tập Sinh Viên
+                                            <div class="btn-ChiTiet">Chi tiết ></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </center>
+
+                        </li>
+                        <li class="col col-sm-4">
+                            <div class="text-center"><img src="Content/img/sp-moi-2.png" class="img-responsive" /></div>
+                            <center>
+                                <div class="border">
+                                    <div>
+                                        <div class="clear-top"></div>
+                                        <!--1-->
+                                        <div class="ct">
+                                            Sổ Bìa da
+                                            <div class="btn-ChiTiet">Chi tiết ></div>
+                                        </div>
+                                        <!--end 1-->
+                                    </div>
+                                </div>
+                            </center>
+
+                        </li>
+                        <li class="col col-sm-4 r">
+                            <div class="text-center"><img src="Content/img/sp-moi-3.png" class="img-responsive" /></div>
+                            <center>
+                                <div class="border">
+                                    <div>
+                                        <div class="clear-top"></div>
+                                        <!--1-->
+                                        <div class="ct">
+                                            Sổ Bìa cứng
+                                            <div class="btn-ChiTiet">Chi tiết ></div>
+                                        </div>
+                                        <!--end 1-->
+                                    </div>
+                                </div>
+                            </center>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="banner-km-nb">
+                    <img src="Content/img/Banner.png" />
+                </div>
+                <div class="sp-tieu-bieu">
+                    <ul class="clearfix">
+                        <li class="col col-xs-6 col-sm-4 l">
+                            <div style="border: 1px solid #cccccc;">
+                                <div class="text-center" style="border: 1px solid #999999; margin: 4px;">
+                                    <img src="Content/img/sp-tieu-bieu-1.png" class="img-responsive" />
+                                </div>
+                                <div style="margin: 4px; border: 1px solid #999999;">
+                                    <div class="clear-top"></div>
+                                    <div class="ct text-center">
+                                        Simple Notebook
+                                        <div class="btn-ChiTiet">Chi tiết ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col col-xs-6 col-sm-4 m">
+                            <div style="border: 1px solid #cccccc;">
+                                <div class="text-center" style="border: 1px solid #999999; margin: 4px;">
+                                    <img src="Content/img/sp-tieu-bieu-1.png" class="img-responsive" />
+                                </div>
+                                <div style="margin: 4px; border: 1px solid #999999;">
+                                    <div class="clear-top"></div>
+                                    <div class="ct text-center">
+                                        Simple Notebook
+                                        <div class="btn-ChiTiet">Chi tiết ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col col-xs-6 col-sm-4 r">
+                            <div style="border: 1px solid #cccccc;">
+                                <div class="text-center" style="border: 1px solid #999999; margin: 4px;">
+                                    <img src="Content/img/sp-tieu-bieu-1.png" class="img-responsive" />
+                                </div>
+                                <div style="margin: 4px; border: 1px solid #999999;">
+                                    <div class="clear-top"></div>
+                                    <div class="ct text-center">
+                                        Simple Notebook
+                                        <div class="btn-ChiTiet">Chi tiết ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col col-xs-6 col-sm-4 l">
+                            <div style="border: 1px solid #cccccc;">
+                                <div class="text-center" style="border: 1px solid #999999; margin: 4px;">
+                                    <img src="Content/img/sp-tieu-bieu-1.png" class="img-responsive" />
+                                </div>
+                                <div style="margin: 4px; border: 1px solid #999999;">
+                                    <div class="clear-top"></div>
+                                    <div class="ct text-center">
+                                        Simple Notebook
+                                        <div class="btn-ChiTiet">Chi tiết ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col col-xs-6 col-sm-4 m">
+                            <div style="border: 1px solid #cccccc;">
+                                <div class="text-center" style="border: 1px solid #999999; margin: 4px;">
+                                    <img src="Content/img/sp-tieu-bieu-1.png" class="img-responsive" />
+                                </div>
+                                <div style="margin: 4px; border: 1px solid #999999;">
+                                    <div class="clear-top"></div>
+                                    <div class="ct text-center">
+                                        Simple Notebook
+                                        <div class="btn-ChiTiet">Chi tiết ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col col-xs-6 col-sm-4 r">
+                            <div style="border: 1px solid #cccccc;">
+                                <div class="text-center" style="border: 1px solid #999999; margin: 4px;">
+                                    <img src="Content/img/sp-tieu-bieu-1.png" class="img-responsive" />
+                                </div>
+                                <div style="margin: 4px; border: 1px solid #999999;">
+                                    <div class="clear-top"></div>
+                                    <div class="ct text-center">
+                                        Simple Notebook
+                                        <div class="btn-ChiTiet">Chi tiết ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sp-noi-bat">
+                    <ul class="clearfix">
+                        <li class="l">
+                            <div class="text-center">
+                                <img src="Content/img/sp-noi-bat-1.png" class="img-responsive" />
+                                <div class="border">
+                                    <div>
+                                        <div class="clear-top"></div>
+                                        <div class="ct">
+                                            Tập Sinh Viên
+                                            <div class="btn-ChiTiet">Chi tiết ></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="r">
+                            <div class="text-center">
+                                <img src="Content/img/sp-noi-bat-2.png" class="img-responsive" />
+                                <div class="border">
+                                    <div>
+                                        <div class="clear-top"></div>
+                                        <!--1-->
+                                        <div class="ct">
+                                            Sổ Bìa da
+                                            <div class="btn-ChiTiet">Chi tiết ></div>
+                                        </div>
+                                        <!--end 1-->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="video-gioithieu">
+                    <div class="text-center l">
+                        <div class="slogan">
+                            <p>PANOPAS</p>
+                            <p> " Điểm nổi bật<span><br> & tiện ích</span><br> <span> mà sản phẩm</span><br> <span> mang đến</span><br><span> cho người sử dụng "</span></p>
+                        </div>
+
+                    </div>
+                    <div class="r">
+                        <div class="video">
+                            <img src="Content/img/videoclip.png" class="img-responsive" />
+                        </div>
+                        <div class="like-share">
+                            <a>Like & Share</a><img src="Content/img/icon2/icon-like.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-contain clearfix">
+                <ul>
+                    <li>
+                        <div class="trogiup">
+                            <p>TRỢ GIÚP</p>
+                            <div class="chitiet-trogiup">
+                                <p><a href="#">Hỗ trợ khách hàng</a></p>
+                                <p><a href="#">Giải đáp đơn hàng</a></p>
+                                <p><a href="#">Cách thức đặt hàng</a></p>
+                                <p><a href="#">Cách thiết kế Online</a></p>
+                                <p><a href="#">Hình thức giao hàng</a></p>
+                                <p><a href="#">Hình thức thanh toán</a></p>
+                                <p><a href="#">Vận chuyển</a></p>
+                                <p><a href="#">Đổi trả & hoàn tiền</a></p>
+                                <p><a href="#">Bảo mật thông tin</a></p>
+                            </div>
+
+                        </div>
+
+                    </li>
+                    <li class="hotro">
+                        <div class="hotro-tructuyen">
+                            <div class="l">
+                                <a href="#">
+                                    <img class="heaphone" src="Content/img/icon2/headphone.png" />
+                                </a>
+                            </div>
+                            <div class="r">
+                                <p>TỔNG ĐÀI HỖ TRỢ</p>
+                                <p>
+                                    <a href="tel:+02871060707">( 028 )<span class="hotline"> 7 1 0 6 0 7 0 7</span></a>
+
+                                </p>
+                                <p>
+                                    <a href="tel:+02873060707">( 028 )<span class="hotline"> 7 3 0 6 0 7 0 7</span></a>
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="l">
+                                <a href="#">
+                                    <img src="Content/img/icon2/location.png" />
+                                </a>
+                            </div>
+                            <div class="r">
+                                <a href="#">
+                                    <p>HỆ THỐNG CHI NHÁNH</p>
+                                    <p>& THỜI GIAN LÀM VIỆC</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="li-thanhtoan">
+                        <div class="thanhtoan">
+                            <div class="l">
+                                <a href="#">
+                                    <img class="the-atm" src="Content/img/icon2/icon-credit-card.png" />
+                                </a>
+                            </div>
+                            <div class="r">
+                                <a href="#">
+                                    <p>DANH SÁCH NGÂN HÀNG</p>
+                                    <p>CHẤP NHẬN THANH TOÁN</p>
+                                    <p>ONLINE ATM - CARD</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="thietke">
+                            <div class="l">
+                                <a href="#">
+                                    <img src="Content/img/icon2/design.png" />
+                                </a>
+                            </div>
+                            <div class="r">
+                                <a href="#">
+                                    <p>HỖ TRỢ THIẾT KẾ LOGO</p>
+                                    <p>MIỄN PHÍ</p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ketnoi">
+                            <p>KẾT NỐI CỘNG ĐỒNG</p>
+                            <div class="socical">
+                                <a class="fb" href="#">
+                                    <img src="Content/img/icon2/fb.png" />
+                                </a>
+                                <a href="#">
+                                    <img src="Content/img/icon2/logo.png" />
+                                </a>
+                                <a href="#">
+                                    <img src="Content/img/icon2/zalo.png" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="moiban">
+                            <a href="#">
+                                <p>MỜI BẠN ĐỂ NHẬN</p>
+                                <p>COUPON QUÀ TẶNG</p>
+                                <div class="icon">
+                                    <img src="Content/img/icon2/girf.png" />
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="col-lg-12 col-xs-12 col-md-12 container-fluid logo-footer">
+                    <div class="text-center">
+                        <a href="#">
+                            <img class="img-footer" src="Content/img/logo/logo-small.png" />
+                        </a>
+                        <a href="#">
+                            <img class="img-footer" src="Content/img/logo/logo-songtao-small.png" />
+                        </a>
+                        <a href="#">
+                            <img class="img-footer" src="Content/img/logo/logo-photobook-small.png" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-xs-12 col-md-12 container-fluid footer">
+                    <center>
+                        <p>Bản quyền CTY TNHH SONG TẠO</p>
+                        <p>GPĐKKD số 0301943985 do Sở KDĐT TP.HCM cấp ngày 10/03/2000, chịu trách nhiệm chính: Giám đốc CTY TNHH SONG TẠO </p>
+                    </center>
+                </div>
+
+            </div>
+        </div>
+       
+    </div>
+
+    <script src="Scripts/sidebar.js?v=1.1112"></script>
+</body>
+</html>
